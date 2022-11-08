@@ -7,6 +7,8 @@ from keras.layers import Dense, Dropout
 from keras.callbacks import EarlyStopping
 
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import RendererAgg
+_lock = RendererAgg.lock
 from sklearn import linear_model, datasets
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
